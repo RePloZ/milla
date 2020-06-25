@@ -1,5 +1,8 @@
 {
-  "title": "Example with-next-translate",
-  "powered": "Powered by",
-  "alt": "Vercel logo"
+  "about": "About Sandrine Ventura",
+  "home": "Homepage",
+  "board": "Board",
+  "contact": "Contact us",
+  "perception": "Change Your Perception...",
+  "vision": "...Change Your Vision"
 }

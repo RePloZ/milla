@@ -1,11 +1,16 @@
 {
-  "allLanguages": ["en", "ca"],
-  "defaultLanguage": "en",
+  "allLanguages": ["en", "fr"],
+  "defaultLanguage": "fr",
   "currentPagesDir": "_pages",
   "finalPagesDir": "pages",
   "localesPath": "locales",
   "pages": {
     "*": ["common"],
-    "/": ["home"]
+    "/": ["home"],
+    "/about": ["about"],
+    "/board": ["board"],
+    "/contact": ["contact"],
+    "/perception": ["perception"],
+    "/vision": ["vision"]
   }
 }
