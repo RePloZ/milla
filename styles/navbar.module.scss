@@ -1,0 +1,86 @@
+@import "include-media";
+@import "colors";
+
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+.navbar {display: none;}
+
+.navbar-light{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+
+.modal {
+    height: 80vh;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    
+    
+    li a {
+        border-radius: 100px;
+        margin: 8px;
+        border: 2px solid white;
+        
+        text-transform: capitalize;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+        transition: all 0.4s;
+        
+        img {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+    }
+    
+    li a:hover {
+        border: 2px solid $ternary-color;
+        color: $ternary-color;
+    }  
+}
+
+.selected{ 
+    border: 2px solid $secondary-color !important;
+    color: $secondary-color !important; 
+}
+
+
+.modal-button {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-hidden {
+    background: rgba(0,0,0,0);
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
