@@ -1,0 +1,60 @@
+@import "colors";
+@import "include-media";
+
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: block;
+}
+
+.bloc-left {
+    position: absolute;
+    left: 20%; 
+    z-index: 2;
+}
+
+.text-bloc-left {
+    width: 75vmin;
+    height: 75vmin;
+    background-color: $ternary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top: 11%;
+}
+
+
+@include media("<phone", "<tablet") {
+    .bloc-image {
+        width: 10rem;
+    }
+    .bloc-text {
+        top: 11%;
+    }
+}
+
+@include media(">tablet", "<desktop") {
+    .bloc-image {
+        width: 15rem;
+    }
+    .bloc-text {
+        top: 11%;
+    }
+}
+
+@include media(">desktop") {
+    .bloc-image {
+        width: 20rem;
+    }
+}
+
+.hat {
+    @extend .bloc-image;
+    @extend .bloc-left;
+}

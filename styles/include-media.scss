@@ -563,3 +563,5 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
     }
   }
 }
+
+$breakpoints: (phone: 576px, tablet: 760px, desktop: 992px);
