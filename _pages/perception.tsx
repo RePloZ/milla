@@ -2,11 +2,16 @@ import useTranslation from 'next-translate/useTranslation'
 import Navbar from 'components/Navbar/index';
 import NavigationButton from 'components/Navigation';
 import styles from 'styles/perception.module.scss';
+import Head from 'next/head';
 
 export default function Home() {
   const { t, lang } = useTranslation()
 
   return (<>
+    <Head>
+      <title>{t('common:perception')} - Milla Rose Agency</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>  
     <NavigationButton 
       left={false}
       href="/vision"

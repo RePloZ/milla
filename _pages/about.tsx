@@ -1,11 +1,16 @@
 import useTranslation from 'next-translate/useTranslation'
 import Navbar from 'components/Navbar/index';
 import NavigationButton from 'components/Navigation';
+import Head from 'next/head';
 
 export default function Home() {
   const { t } = useTranslation()
 
   return (<>
+    <Head>
+      <title>{t('common:about')} - Milla Rose Agency</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>  
     <NavigationButton 
       left={true}
       href="/vision"

@@ -4,11 +4,16 @@ import useTranslation from 'next-translate/useTranslation'
 import styles from "styles/home.module.scss";
 import Navbar from 'components/Navbar';
 import NavigationButton from 'components/Navigation';
+import Head from 'next/head';
 
 export default function Home() {
   const { t } = useTranslation()
 
   return (<>
+    <Head>
+      <title>Milla Rose Agency</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>  
     <NavigationButton 
       left={false}
       href="/perception"
