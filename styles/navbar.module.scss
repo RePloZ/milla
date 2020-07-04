@@ -4,9 +4,10 @@
 .navbar {display: none;}
 
 .navbar-light{
-    position: absolute;
+    position: fixed;
     top: 25px;
     left: 25px;
+    z-index: 100;
 }
 
 
@@ -62,18 +63,19 @@
     color: $secondary-color !important; 
 }
 
-
 .modal-button {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgba(0,0,0,0.8);
+    overflow: hidden;
 }
 
 .modal-hidden {
+    overflow: auto;
     background: rgba(0,0,0,0);
     position: fixed;
     z-index: -1;
