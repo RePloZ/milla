@@ -14,8 +14,8 @@ export default function Home() {
     <NavigationButton 
       left={true}
       href="/perception"
-      src={"/img/black_hat_man.png"}
-      alt={"men with black hat"}
+      src="/img/black_hat_man.png"
+      alt="men with black hat"
       name={t('common:perception')}
     />
     <NavigationButton 
