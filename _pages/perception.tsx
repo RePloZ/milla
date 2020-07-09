@@ -12,6 +12,7 @@ export default function Home() {
       <title>{t('common:perception')} - Milla Rose Agency</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>  
+    
     <NavigationButton 
       left={false}
       href="/vision"

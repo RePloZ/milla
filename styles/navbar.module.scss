@@ -1,5 +1,5 @@
-@import "include-media";
-@import "colors";
+@import "components/include-media";
+@import "components/colors";
 
 .navbar {display: none;}
 
@@ -78,7 +78,6 @@
     overflow: auto;
     background: rgba(0,0,0,0);
     position: fixed;
-    z-index: -1;
     opacity: 0;
     left: 50%;
     top: 50%;

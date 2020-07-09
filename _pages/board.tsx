@@ -21,10 +21,11 @@ export default function Home() {
     <NavigationButton 
       left={true}
       href="/about"
-      src="/img/8f55dcb3-f5a3-4192-b0b9-99ab16d52456.png"
+      src="/img/darling_hat.png"
       alt="multiple hat in a store"
       name={t('common:about')}
     />
+    
     <Navbar/>
   </>)
 }

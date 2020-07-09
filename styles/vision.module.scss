@@ -1,0 +1,36 @@
+@import "components/colors";
+@import "components/include-media";
+@import "components/bloc";
+
+.black-woman-makeup {
+    @extend .bloc-image-sm;
+    @extend .bloc-bottom-right;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.laptop-design {
+    @extend .bloc-image-sm;
+    @extend .bloc-top-left;
+    z-index: 0;
+    @include media("<phone", "<tablet") {min-width: 20vmin;}
+    @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
+    @include media(">desktop") {min-width: 70vmin;}    
+}
+
+.airplane-architecture{
+    @extend .bloc-image-sm;
+    @extend .bloc-top-right;
+    z-index: 0;
+    @include media("<phone", "<tablet") {min-width: 20vmin;}
+    @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
+    @include media(">desktop") {min-width: 70vmin;}    
+}
+
+.yellow-mouth{
+    @extend .bloc-image-sm;
+    @extend .bloc-top-middle;
+    @include media("<phone", "<tablet") {width: 20vmin;}
+    @include media(">tablet", "<desktop") {width: 40vmin; z-index: 3;}
+    @include media(">desktop") {width: 40vmin;}    
+}

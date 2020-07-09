@@ -1,9 +1,9 @@
-@import "include-media";
-@import "colors";
+@import "components/include-media";
+@import "components/colors";
 
 .bulle{
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     @include media(">phone") {
         top: 50%;
         transform: translateY(-50%);    
@@ -60,13 +60,14 @@
 }
 
 .navigation-active{
-    z-index: 2;
+    z-index: 3;
     opacity: 0.7;
     background-color: $ternary-color;
 }
 
 .navigation-inactive{
-    z-index: -1;
+    display: none;
+    z-index: 3;
     opacity: 0;
     background-color: rgba(255, 255, 255, 0);
 }

@@ -1,7 +1,34 @@
-@import "colors";
-@import "include-media";
+@import "components/colors";
+@import "components/include-media";
+@import "components/typography";
+
+// body {
+//   width: 100%;
+//   height: 100%;
+//   min-height: 100vw;
+//   display: block;
+//   position: relative;
+// }
+
+// body::after {
+//   content: "";
+//   background-image: url("/img/orchids.jpg");
+//   opacity: 0.5;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: sticky;
+//   z-index: -1;   
+//   background: url("/img/orchids-1209612_1920.jpg");
+// }
 
 body {
+  font-family: 'Merienda One', cursive;
   padding: 0;  
   margin: 0;
   color: $primary-color;

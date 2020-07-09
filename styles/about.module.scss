@@ -1,0 +1,26 @@
+@import "components/colors";
+@import "components/include-media";
+@import "components/bloc";
+
+.darling-hat {
+    @extend .bloc-image-sm;
+    @extend .bloc-top-left;
+    left: 10%;
+    @include media("<phone", "<tablet") {min-width: 20vmin;}
+    @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
+    @include media(">desktop") {min-width: 50vmin;}    
+}
+
+.black-woman {
+    @extend .bloc-image-sm;
+    @extend .bloc-middle-left;
+    left: 10%;
+    @include media(">phone", "<tablet") {min-width: 20vmin;}
+    @include media(">tablet", "<desktop") {min-width: 60vmin; z-index: 0;}
+    @include media(">desktop") {min-width: 80vmin; z-index: 0;}    
+}
+
+.white-woman {
+    @extend .bloc-image-sm;
+    @extend .bloc-top-right;
+}

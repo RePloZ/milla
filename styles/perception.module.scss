@@ -1,103 +1,10 @@
-@import "colors";
-@import "include-media";
-
-.page {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: block;
-}
-
-.bloc-left {
-    position: absolute;
-    left: 20%;
-    z-index: 2;
-}
-
-.bloc-bottom {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 25%);
-    z-index: 2;
-}
-
-.text-bloc {
-    width: 75vmin;
-    height: 75vmin;
-    background-color: $ternary-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    padding: 5vmin;
-}
-
-.text-bloc-left {
-    @extend .text-bloc;
-    position: absolute;
-    z-index: 1;
-    left: 30%;
-    top: 20%;
-}
-
-.text-bloc-right {
-    @extend .text-bloc;
-    position: absolute;
-    z-index: 1;
-    left: 30%;
-}
-
-.text-bloc-middle-up {
-    @extend .text-bloc;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top:0%;
-    transform: translateX(-50%);
-}
-
-
-@include media("<phone", "<tablet") {
-    .bloc-image-sm {width: 10rem;}
-    .bloc-image-md {width: 20rem;}
-    .bloc-text {
-        top: 11%;
-    }
-    .text-bloc-left {
-        top: 11%;
-    }
-}
-
-
-@include media(">tablet", "<desktop") {
-    .bloc-image-sm {
-        width: 15rem;
-    }
-    .bloc-image-md {width: 25rem;}
-
-    .bloc-text {
-        top: 11%;
-    }
-    .text-bloc-left {
-        left: 10%;
-        top: 6%;
-    }
-}
-
-@include media(">desktop") {
-    .bloc-image-sm {
-        width: 20rem;
-    }
-    .bloc-image-md {width: 30rem;}
-    .text-bloc-left {}
-}
+@import "components/colors";
+@import "components/include-media";
+@import "components/bloc";
 
 .hat {
     @extend .bloc-image-sm;
-    @extend .bloc-left;
+    @extend .bloc-top-left;
 }
 
 .person {
