@@ -29,8 +29,6 @@
 .special {
     @include media("<phone", "<tablet") {
         font-size: 12px;
-        p {
-            font-size: 0.75em;
-        }            
+        p {font-size: 0.75em;}            
     }
 }
