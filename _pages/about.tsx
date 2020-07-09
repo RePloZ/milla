@@ -52,7 +52,7 @@ export default function Home() {
         <img className={styles["black-woman"]} src="/img/accessories-adult-attractive-935952.png" alt="multiple hat in a store"/>
     </div>
     <div className={styles.page}>
-        <div className={classnames(styles["text-bloc-adjust-up"],styles["text-bloc-bottom-left"])}>
+        <div className={classnames(styles["special"], styles["text-bloc-adjust-up"],styles["text-bloc-bottom-left"])}>
           <h2>{t("about:title_3")}</h2>
           {[t("about:p3_2"),t("about:p3_2"),t("about:p3_3"),].map((value, index) => (<p className={styles["text-mini"]} key={index}>{value}</p>))}
         </div>

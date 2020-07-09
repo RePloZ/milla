@@ -45,6 +45,7 @@ body {
 
 #page-title {
   width: 100%;
+  text-align: center;
 
   @include media(">phone") {
     height: 80vh;

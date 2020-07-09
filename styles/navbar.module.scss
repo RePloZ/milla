@@ -1,8 +1,6 @@
 @import "components/include-media";
 @import "components/colors";
 
-.navbar {display: none;}
-
 .navbar-light{
     position: fixed;
     top: 25px;
@@ -13,23 +11,27 @@
 
 .modal {
     height: 80vh;
-    display: flex;
     position: fixed;
     z-index: 100;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
-    display: flex;
+
+    display: flex;    
     justify-content: space-around;
     flex-direction: column;
     
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: transparent;
     
+    @include media(">phone") {
+        p{font-size: 1rem;}
+    }
+    @include media("<phone") {
+        p{font-size: 0.75rem;}
+    }
     
     li a {
         border-radius: 100px;

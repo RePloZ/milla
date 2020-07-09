@@ -3,6 +3,7 @@ import Navbar from 'components/Navbar/index';
 import NavigationButton from 'components/Navigation';
 import styles from 'styles/perception.module.scss';
 import Head from 'next/head';
+import classnames from 'classnames';
 
 export default function Home() {
   const { t, lang } = useTranslation()
@@ -33,7 +34,7 @@ export default function Home() {
     </div>
     <div className={styles.page}>
       <img className={styles.hat} src="/img/black_hat_man.png" alt=""/>
-      <div className={styles["text-bloc-left"]}>
+      <div className={classnames(styles["bug"],styles["text-bloc-left"])}>
         {[t("perception:p1"), t("perception:p2")].map((value, index) => (<p key={index}>{value}</p>)) }
       </div> 
     </div>

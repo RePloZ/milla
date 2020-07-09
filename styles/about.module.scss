@@ -23,4 +23,14 @@
 .white-woman {
     @extend .bloc-image-sm;
     @extend .bloc-top-right;
+    @include media("<phone", "<tablet") {z-index: 0 !important;}
+}
+
+.special {
+    @include media("<phone", "<tablet") {
+        font-size: 12px;
+        p {
+            font-size: 0.75em;
+        }            
+    }
 }

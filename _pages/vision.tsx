@@ -3,6 +3,7 @@ import Navbar from 'components/Navbar/index';
 import NavigationButton from 'components/Navigation';
 import Head from 'next/head';
 import styles from 'styles/vision.module.scss';
+import classnames from 'classnames';
 
 export default function Home() {
   const { t } = useTranslation()
@@ -32,7 +33,7 @@ export default function Home() {
       <h1>{t('vision:title')}</h1>
     </div>
     <div className={styles.page}>
-        <div className={styles["text-bloc-top-left"]}>
+        <div className={ classnames(styles["text-bloc-top-left"], styles["large-bloc"]) }>
           <p>{t("vision:p1_1")}</p>
         </div>
         <img className={styles["black-woman-makeup"]} src="/img/adult-art-artwork-1081685.png" alt="Woman with blue makeup"/>

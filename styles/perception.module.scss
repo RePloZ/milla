@@ -7,7 +7,17 @@
     @extend .bloc-top-left;
 }
 
+.bug {
+    @include media("<phone") {
+        left: 5%;
+        top:  20%;
+    }    
+}
+
 .person {
     @extend .bloc-image-md;
     @extend .bloc-bottom;
+    @include media("<phone") {
+        bottom:  25%;
+    }    
 }

@@ -6,6 +6,7 @@
     @extend .bloc-image-sm;
     @extend .bloc-bottom-right;
     right: 50%;
+    @include media("<phone") {bottom: 25%;}
     transform: translateX(50%);
 }
 
@@ -30,7 +31,11 @@
 .yellow-mouth{
     @extend .bloc-image-sm;
     @extend .bloc-top-middle;
-    @include media("<phone", "<tablet") {width: 20vmin;}
+    @include media("<phone", "<tablet") {width: 60vmin;}
     @include media(">tablet", "<desktop") {width: 40vmin; z-index: 3;}
     @include media(">desktop") {width: 40vmin;}    
+}
+
+.large-bloc{
+    @include media("<phone") {width: 90vmin; height: 90vmin; left: 0%;}
 }

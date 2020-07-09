@@ -1,8 +1,25 @@
 @import "colors";
 
+body {font-size: 16px;}
+
 h1, h2, h3 {color: $secondary-color;}
 
+@include media(">phone") {
+    p{font-size: 1rem;}
+}
+@include media("<phone") {
+    p{font-size: 0.75rem;}
+}
+
+
 /*
+h1 { font-size: $h1-fontsize}
+h2 { font-size: $h2-fontsize}
+h3 { font-size: $h3-fontsize}
+h4 { font-size: $h4-fontsize}
+h5 { font-size: $h5-fontsize}
+h6 { font-size: $h6-fontsize}
+
 $h1-fontsize: 4.2rem !default;
 $h2-fontsize: 3.56rem !default;
 $h3-fontsize: 2.92rem !default;

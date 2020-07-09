@@ -1,20 +1,14 @@
 {
     "title": "Direction Stratégique",
-    "p1_1": {
-        "_1": "Sandrine VENTURA",
-        "_2": "CEO & Founder",
-        "_3": "milla-rose@milla-rose.agency"
-    },
-    "p1_2": {
-        "_1": "Frédéric FOFANA",
-        "_2": "Director of Strategy and Business Development",
-        "_3": "business@milla-rose.agency"
-    },
-    "p1_3": {
-        "_1": "Hélène KOFFI",
-        "_2": "Coach in communication strategy",
-        "_3": "strategie@milla-rose.agency"
-    },
+    "p1_1_1": "Sandrine VENTURA",
+    "p1_1_2": "CEO & Founder",
+    "p1_1_3": "milla-rose@milla-rose.agency",
+    "p1_2_1": "Frédéric FOFANA",
+    "p1_2_2": "Directeur de la stratégie et du business développement",
+    "p1_2_3": "business@milla-rose.agency",
+    "p1_3_1": "Hélène KOFFI",
+    "p1_3_2": "Coach en stratégie de communication",
+    "p1_3_3": "strategie@milla-rose.agency",
     "title_2": "A 360° Team",
     "p2_1": "Strategic positioning of brands (Luxe and ultra-Luxe)",
     "p2_2": "Communication Strategy",
