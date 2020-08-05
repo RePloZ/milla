@@ -54,7 +54,7 @@ export default function Home() {
     <div className={styles.page}>
         <div className={classnames(styles["special"], styles["text-bloc-adjust-up"],styles["text-bloc-bottom-left"])}>
           <h2>{t("about:title_3")}</h2>
-          {[t("about:p3_2"),t("about:p3_2"),t("about:p3_3"),].map((value, index) => (<p className={styles["text-mini"]} key={index}>{value}</p>))}
+          {[t("about:p3_1"),t("about:p3_2"),t("about:p3_3"),].map((value, index) => (<p className={styles["text-mini"]} key={index}>{value}</p>))}
         </div>
         <img className={styles["white-woman"]} src="/img/beautiful-woman-fashion-fashion-model.png" alt="women mouth with yellow paint"/>
     </div>
