@@ -2,6 +2,7 @@ import useTranslation from 'next-translate/useTranslation'
 import Navbar from 'components/Navbar/index';
 import NavigationButton from 'components/Navigation';
 import Head from 'next/head';
+import styles from 'styles/contact.module.scss'
 
 export default function Home() {
   const { t } = useTranslation()
@@ -19,5 +20,15 @@ export default function Home() {
       name={t('common:board')}
     />
     <Navbar/>
+
+    <div className={styles.page}>
+        <div className={styles["text-bloc-bottom-middle"]}>
+          <h1>{t("contact:title")}</h1>
+          {[t("contact:location_1_1"), t("contact:location_1_2"), t("contact:location_1_3"), t("contact:location_1_4")].map((value, index) => <p key={index}>{value}</p>)}
+        </div>
+    </div>
+
   </>)
 }
+
+
