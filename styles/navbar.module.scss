@@ -66,6 +66,7 @@
 }
 
 .modal-button {
+    visibility: visible;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -78,6 +79,7 @@
 
 .modal-hidden {
     overflow: auto;
+    visibility: hidden;
     background: rgba(0,0,0,0);
     position: fixed;
     opacity: 0;
