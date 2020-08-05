@@ -3,6 +3,7 @@
     height: 100vh;
     position: relative;
     display: block;
+    @include media(">tablet", "<desktop") {height: 75vh;}
 }
 
 .doublepage {
@@ -68,6 +69,11 @@
 .text-bloc {
     width: 75vmin;
     height: 75vmin;
+    @include media(">phone", "<desktop") {
+        width: 60vmin;
+        height: 60vmin; 
+    }
+
     background-color: $ternary-color;
     display: flex;
     flex-direction: column;
@@ -78,11 +84,11 @@
     padding: 5vmin;
 }
 
-.text-mini{@include media("<phone", "<tablet") {font-size: 0.75rem;}}
+.text-mini{@include media(">phone", "<tablet") {font-size: 0.75rem;}}
 
 .text-bloc-adjust-down{
-    @include media("<phone") {transform: translateY(30%);}
-    @include media("<tablet", ">desktop") {transform: translateY(-15%);}
+    @include media(">phone") {transform: translateY(30%);}
+    @include media(">tablet", "<desktop") {transform: translateY(-15%);}
 }
 
 .text-bloc-adjust-up{
@@ -188,10 +194,6 @@
 
     .bloc-text {
         top: 11%;
-    }
-    .text-bloc-left {
-        left: 10%;
-        top: 6%;
     }
 }
 

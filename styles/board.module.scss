@@ -5,7 +5,7 @@
 .building {
     @extend .bloc-image-sm;
     @extend .bloc-bottom-right;
-    @include media("<phone", "<tablet") {min-width: 40vmin; bottom:20%;}
+    @include media(">phone", "<tablet") {min-width: 40vmin; bottom:20%;}
     @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
     @include media(">desktop") {min-width: 70vmin;}    
 }
@@ -13,7 +13,7 @@
 .wardrobe {
     @extend .bloc-image-sm;
     @extend .bloc-top-left;
-    @include media("<phone", "<tablet") {min-width: 40vmin; top:20%;}
+    @include media(">phone", "<tablet") {min-width: 40vmin; top:20%;}
     @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
     @include media(">desktop") {min-width: 70vmin; z-index: 0;}    
 }
@@ -21,7 +21,7 @@
 .apparel {
     @extend .bloc-image-sm;
     @extend .bloc-top-right;
-    @include media("<phone", "<tablet") {min-width: 40vmin; bottom:20%;}
+    @include media(">phone", "<tablet") {min-width: 40vmin; bottom:20%;}
     @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
     @include media(">desktop") {min-width: 70vmin;}    
 }
