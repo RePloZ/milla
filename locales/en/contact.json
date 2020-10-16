@@ -1,9 +1,7 @@
 {
     "title": "Contact Us",
-    "location": {
-        "_1": "Immeuble STARTWAY",
-        "_2": "43/47, Avenue de la Grande Armée",
-        "_3": "75116 PARIS",
-        "_4": "business@milla-rose.agency"
-    }
+    "location_1_1": "Immeuble STARTWAY",
+    "location_1_2": "43/47, Avenue de la Grande Armée",
+    "location_1_3": "75116 PARIS",
+    "location_1_4": "business@milla-rose.agency"
 }
