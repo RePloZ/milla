@@ -25,6 +25,7 @@ export default function Home() {
     <div className={styles.parent}>
       <img className={styles.image} src="/img/milla_rose_logo.png" alt="Milla Rose Logo"/>
       <h1 className={styles.text}>{t('home:title')}</h1>
+      <h1 className={styles.text}>{t('home:subtitle')}</h1>
     </div>
   </>)
 }
