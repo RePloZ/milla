@@ -25,3 +25,7 @@
     @include media(">tablet", "<desktop") {min-width: 40vmin; z-index: 3;}
     @include media(">desktop") {min-width: 70vmin;}    
 }
+
+.text-mini {
+    max-width: 70vmin;
+}

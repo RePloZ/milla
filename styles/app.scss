@@ -72,6 +72,8 @@ html {
   width: 100%;
   text-align: center;
 
+  @include media("<phone") { margin-top: 5rem;}
+
   @include media(">phone") {
     height: 80vh;
   }

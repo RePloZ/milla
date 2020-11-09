@@ -40,7 +40,7 @@ export default function Home() {
     </div>
     <div className={styles.page}>
         <div className={styles["text-bloc-bottom-right"]}>
-          {[t("board:p2_1"),t("board:p2_2"),t("board:p2_3"),t("board:p2_4"),t("board:p2_5")].map((value, index) => (<p>{value}</p>))}
+          {[t("board:p2_1"),t("board:p2_2"),t("board:p2_3"),t("board:p2_4"),t("board:p2_5")].map((value, index) => (<p className={styles["text-mini"]}>{value}</p>))}
         </div>
         <img className={styles["wardrobe"]} src="/img/pexels-photo-2170387.png" alt="wardrobe"/>
     </div>
