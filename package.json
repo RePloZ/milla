@@ -10,7 +10,7 @@
     "classnames": "^2.2.6",
     "hamburger-react": "^2.3.0",
     "include-media-export": "^1.0.3",
-    "next": "9.4.4",
+    "next": "13.0.2",
     "next-translate": "0.16.1",
     "react": "17.0.1",
     "react-burger-menu": "^2.9.0",
